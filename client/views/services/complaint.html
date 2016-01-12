@@ -1,0 +1,52 @@
+<template name="Complaint">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+						<h2 id="page_title" align="center">
+							Complaints
+						</h2>
+						<div id="page_menu" class="pull-right">
+						</div>
+					</div>
+				</div>
+				{{> ComplaintLoremIpsum}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="menu">
+				{{> ComplaintTabMenu}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="subcontent">
+				{{> yield region='ComplaintSubcontent'}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="ComplaintTabMenu">
+	<ul id="menu-items" class="nav nav-tabs">
+		<li id="menu-item-simple" class="{{menuItemClass 'services.complaint.what'}}">
+			<a href="{{pathFor 'services.complaint.what'}}">
+				<span class="item-title">
+					What do we cover
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'misc'}}">
+			<a href="{{pathFor 'misc'}}">
+				<span class="item-title">
+					Submit New
+				</span>
+			</a>
+		</li>
+	</ul>
+</template>
+
+<template name="ComplaintLoremIpsum">
+	{{#markdown}}<br><p align="justify">Even though several government/private organizations are working very hard to provide the public with means to fix issues, it is indeed very hard. With so many organizations working on so many different things, and a lot of this information scattered all over, it is sometimes hard to get to the right contact. We've worked on something via which you can pinpoint the correct addresses for complaints and inquiries of the body involved.</p>{{/markdown}}
+</template>
+

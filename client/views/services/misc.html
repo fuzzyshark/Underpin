@@ -1,0 +1,32 @@
+<template name="Misc">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+						<h2 id="page_title" class="pull-left">
+							
+						</h2>
+						<div id="page_menu" class="pull-right">
+						</div>
+					</div>
+				</div>
+				{{> afCheckbox_termsLink}}
+
+			</div>
+		</div>
+	</div>
+</template>
+
+
+
+
+
+<template name="afCheckbox_termsLink">
+<br><br><br><br><br><br><br><br><br><br><br><br>
+	<center>
+    	<p>By clicking 'I Accept', you accept the <a href="/about/terms">Terms and Conditions</a></p><hr>
+        <button class="btn btn-default " onclick="location.href='/services/complaint/new'">I Accept</button>
+	</center>
+</template>
+

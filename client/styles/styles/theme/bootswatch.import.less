@@ -1,0 +1,254 @@
+// Simplex 3.2.0
+// Bootswatch
+// -----------------------------------------------------
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+
+.btn-shadow(@color) {
+  #gradient > .vertical-three-colors(lighten(@color, 3%), @color, 6%, darken(@color, 6%));
+  filter: none;
+  border: 1px solid darken(@color, 10%);
+}
+
+// Navbar =====================================================================
+
+.navbar {
+
+  &-inverse {
+
+    .badge {
+      background-color: #fff;
+      color: @brand-primary;
+      border:none;
+    }
+  }
+}
+
+// Buttons ====================================================================
+
+.btn {
+  font-family: @headings-font-family;
+}
+.btn-lg {
+  padding-top: 19px;
+}
+
+.text-primary,
+.text-primary:hover {
+  color: @brand-primary;
+}
+
+.text-success,
+.text-success:hover {
+  color: @brand-success;
+}
+
+.text-danger,
+.text-danger:hover {
+  color: @brand-danger;
+}
+
+.text-warning,
+.text-warning:hover {
+  color: @brand-warning;
+}
+
+.text-info,
+.text-info:hover {
+  color: @brand-info;
+}
+
+
+.btn-default,
+.btn-default:hover {
+  .btn-shadow(@btn-default-bg);
+}
+
+.btn-primary,
+.btn-primary:hover {
+  .btn-shadow(@btn-primary-bg);
+}
+
+.btn-success,
+.btn-success:hover {
+  .btn-shadow(@btn-success-bg);
+}
+
+.btn-info,
+.btn-info:hover {
+  .btn-shadow(@btn-info-bg);
+}
+
+.btn-warning,
+.btn-warning:hover {
+  .btn-shadow(@btn-warning-bg);
+}
+
+.btn-danger,
+.btn-danger:hover {
+  .btn-shadow(@btn-danger-bg);
+}
+
+// Typography =================================================================
+
+body {
+  font-weight: 115;
+}
+
+// Tables =====================================================================
+
+th {
+  color: @headings-color;
+}
+
+// Forms ======================================================================
+
+legend {
+  color: @headings-color;
+}
+
+.has-warning {
+  .help-block,
+  .control-label {
+    color: @brand-danger;
+  }
+
+  .form-control,
+  .form-control:focus {
+    border-color: @brand-danger;
+  }
+}
+
+.has-error {
+  .help-block,
+  .control-label {
+    color: @brand-primary;
+  }
+
+  .form-control,
+  .form-control:focus {
+    border-color: @brand-primary;
+  }
+}
+
+.has-success {
+  .help-block,
+  .control-label {
+    color: @brand-success;
+  }
+
+  .form-control,
+  .form-control:focus {
+    border-color: @brand-success;
+  }
+}
+
+// Navs =======================================================================
+
+.pager {
+  a {
+    color: @headings-color;
+  }
+
+  a:hover,
+  .active > a, {
+    border-color: @brand-primary;
+    color: #fff;
+  }
+
+  .disabled > a {
+    border-color: @pager-border;
+  }
+}
+
+.nav-pills {
+
+  & > li > a {
+    border-radius: 0;
+  }
+}
+
+.dropdown-menu {
+
+  & > li > a:hover,
+  & > li > a:focus {
+    background-image: none;
+  }
+}
+// Indicators =================================================================
+
+.close {
+  text-decoration: none;
+  text-shadow: none;
+  opacity: 0.4;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.alert {
+  border: none;
+
+  .alert-link {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+.label {
+  border-radius: 0;
+}
+
+// Progress bars ==============================================================
+.progress {
+  height: 8px;
+  .box-shadow(none);
+  .progress-bar {
+    font-size: 8px;
+    line-height: 8px;
+  }
+}
+// Containers =================================================================
+.panel {
+  &-heading,
+  &-footer {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  &-default {
+    .close {
+      color: @text-color;
+    }
+  }
+}
+
+.modal {
+
+  &-content {
+    border: none;
+  }
+
+  &-header {
+    background-color: @navbar-default-bg;
+    color: #fff;
+    border:none;
+  }
+
+  &-body,
+  &-footer {
+    .close {
+      color: @text-color;
+    }
+  }
+}
+
+.popover {
+  color: @text-color;
+}
+
+// Cosmo 3.2.0
+// Bootswatch
+// -----------------------------------------------------
+

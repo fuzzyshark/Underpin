@@ -1,0 +1,46 @@
+<template name="Rti">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+						<h2 id="page_title" align="center">
+							Right To Information
+						</h2>
+						<div id="page_menu" class="pull-right">
+						</div>
+					</div>
+				</div>
+				{{> RtiLoremIpsum}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="menu">
+				{{> RtiTabMenu}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="subcontent">
+				{{> yield region='RtiSubcontent'}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="RtiTabMenu">
+	<ul id="menu-items" class="nav nav-tabs">
+		<li id="menu-item-simple" class="{{menuItemClass 'services.rti.what'}}">
+			<a href="{{pathFor 'services.rti.what'}}">
+				<span class="item-title">
+					Guidelines
+				</span>
+			</a>
+		</li>
+	</ul>
+</template>
+
+<template name="RtiLoremIpsum">
+	{{#markdown}}<br><p align="justify">Right to Information Act 2005 mandates timely response to citizen requests for government information. It is an initiative taken by Department of Personnel and Training, Ministry of Personnel, Public Grievances and Pensions to provide añ RTI Portal Gateway to the citizens for quick search of information on the details of first Appellate Authorities, PIOs etc. Basic object of the Right to Information Act is to empower the citizens,promote transparency and accountability in the working of the Government,contain corruption, and make our democracy work for the people in real sense. The Act is a big step towards making the citizens informed about the activities of the Government. The Act applies to all States and Union Territories of India except Jammu & Kashmir.</p><br>
+	{{/markdown}}
+</template>
+

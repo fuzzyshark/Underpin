@@ -1,0 +1,29 @@
+<template name="Who">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+						<h2 id="page_title" align="center">
+							Who Are We
+						</h2>
+						<div id="page_menu" class="pull-right">
+						</div>
+					</div>
+				</div>
+				{{> WhoLoremIpsum}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="WhoLoremIpsum">
+	{{#markdown}}
+<div align="center">
+</div>
+<br><hr hidden="true"><br><hr width="60%">
+<div align="center">
+<p align="center"><br><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact[at]underpin[dot]co[dot]in&su=&body=BODY&bcc=" target="_blank"><i class="zmdi zmdi-border-color"></i></a></p><p align="center"><b>contact</b>[at]<b>underpin</b>[dot]<b>co</b>[dot]<b>in</b></p>
+</div>
+	{{/markdown}}
+</template>

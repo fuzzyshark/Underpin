@@ -1,0 +1,107 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/images/favico.ico" type="image/x-icon"/><title>
+		Underpin
+	</title>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '<redacted>', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<template name="layout">
+	{{> FreeLayout}}
+</template>
+
+<template name="FreeLayout">
+	<div id="content" class="sticky-wrapper">
+		<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+			<div class="navbar-container container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">
+							Toggle navigation
+						</span>
+						<span class="icon-bar">
+						</span>
+						<span class="icon-bar">
+						</span>
+						<span class="icon-bar">
+						</span>
+					</button>
+					<a class="navbar-brand" href="#">
+					<img src="/images/favico.ico" height="25" width="25"/>&nbsp;
+					</a>
+				</div>
+				<div id="menu" class="collapse navbar-collapse">
+					{{> FreeLayoutMainMenu}}
+				</div>
+			</div>
+		</div>
+		<div class="navbar-spacer">
+		</div>
+		{{> yield}}
+	</div>
+
+	<nav id="footer">
+<div class="container">
+<br><br><hr>
+<div class="pull-left fnav">
+<p><small>All Rights Reserved.</small> </p>
+</div>
+<div class="pull-right fnav" style="opacity:1.0;">
+<ul class="footer-social">
+<a href="<redacted>" target="_blank"><i class="zmdi zmdi-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="<redacted>" target="_blank"><i class="zmdi zmdi-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="<redacted>" target="_blank"><i class="zmdi zmdi-google-plus-box"></i></a>
+</ul>
+</div>
+</div>
+</nav>
+</template>
+
+<template name="FreeLayoutMainMenu">
+	<ul id="menu-items" class="nav navbar-nav" >
+		<li id="menu-item-simple" class="{{menuItemClass 'home'}}">
+			<a href="{{pathFor 'home'}}">
+				<span class="item-title">
+					Home
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'misc'}}">
+			<a href="{{pathFor 'services'}}">
+				<span class="item-title">
+					Our Services
+				</span>
+			</a>
+		</li>
+
+		<li id="menu-item-simple" class="{{menuItemClass 'about'}}">
+			<a href="{{pathFor 'about'}}">
+				<span class="item-title">
+					About Us
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'blog'}}">
+			<a href="https://urunderpin.blogspot.com">
+				<span class="item-title">
+					Blog
+				</span>
+			</a>
+		</li>
+		<li id="menu-item-simple" class="{{menuItemClass 'join'}}">
+			<a href="{{pathFor 'join'}}">
+				<span class="item-title">
+					Join Us
+				</span>
+			</a>
+		</li>
+	</ul>
+</template>

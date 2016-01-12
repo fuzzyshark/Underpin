@@ -1,0 +1,25 @@
+<template name="Write">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+						<h2 id="page_title" class="pull-left">
+							Write To Authorities
+						</h2>
+						<div id="page_menu" class="pull-right">
+						</div>
+					</div>
+				</div>
+				{{> WriteLoremIpsum}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="WriteLoremIpsum">
+	{{#markdown}}<br>
+<p align="center"><table style="width:30%"><tr><td>&nbsp;&nbsp;</td><td>Prime Minister</td><td><button class="btn btn-default btn-sm" onclick="location.href='http://pmindia.gov.in/en/interact-with-honble-pm/'">Contact</button></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;&nbsp;</td><td>Chief Minister, New Delhi</td><td><button class="btn btn-default btn-sm" onclick="location.href='https://mail.google.com/mail/?view=cm&fs=1&to=cmdelhi[at]nic[dot]in&su=&body='">Contact</button></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;&nbsp;</td><td>Ministers</td><td><button class="btn btn-default btn-sm" onclick="location.href='http://delhi.gov.in/wps/wcm/connect/doit/Delhi+Govt/Delhi+Home/Departments/Executives/Ministers+Contact+Details'">Contact</button></td></tr></table></p>
+
+	{{/markdown}}
+	</template>

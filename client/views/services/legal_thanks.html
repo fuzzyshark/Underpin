@@ -1,0 +1,18 @@
+<template name="LegalT">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<h2 id="page_title" class="pull-left">
+					
+				</h2>
+				<div id="page_menu" class="pull-right">
+				</div>
+			</div>
+		</div>
+		{{> LegalTLoremIpsum}}
+	</div>
+</template>
+
+<template name="LegalTLoremIpsum">
+	{{#markdown}}<br><br><p align="center">We have received your query, and will get back to you soon.</p><br><p align="center"><small>For any further queries email us<br><b>contact</b>[at]<b>underpin</b>[dot]<b>co</b>[dot]<b>in</b></small></p>{{/markdown}}
+</template>

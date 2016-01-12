@@ -1,0 +1,186 @@
+<template name="Home">
+	{{> HomeJumbotron}}{{> HomeSection1}}{{> HomeSection2}}{{>HomeSection3}}{{>HomeSection4}}
+		<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<div id="page_menu" class="pull-right">
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="HomeJumbotron">
+	<div class="jumbotron " style="background-image: url('/images/back.jpg');">
+		<div id="content" class="container" style="opacity:1.0;">
+			<p id="jumbotron-text">
+			</p>
+			{{> HomeJumbotronContent}}
+		</div>
+	</div>
+</template>
+
+
+<template name="HomeJumbotronContent">
+
+	<h1 id="section-welcome">
+	<img src="/images/cover.png" height="220" width="450" />
+	</h1>
+	<p align="center">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	</p>
+	<p align="center">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	</p>
+	<br>
+	<p>
+		
+	</p>
+	
+	<button class="btn btn-primary btn-sm" onclick="location.href='#section1'">Discover More</button>
+	
+</template>	
+<template name="HomeSection1" id="section2">
+	<section class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContent1}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContent1">
+	{{#markdown}}
+<h1 id="section2"> </h1>
+{{/markdown}}
+</template>
+
+<template name="HomeSection2" id="section1">
+	<section class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContent2}}
+					<div class="line">
+						<hr>
+						</div>
+					{{> HomeThreeColumns}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContent2">
+	{{#markdown}}
+<h1 id="section1"><center>How do you fix what is wrong ?</center></h1>
+<p>
+<center>SPEAK UP</center>
+</p>
+{{/markdown}}
+</template>
+
+<template name="HomeThreeColumns">
+	<div class="row text-center">
+		<div class="col-md-4">
+			<img src="/images/shop512px.png" height="75" width="75"/><br>
+			<p>
+			<br>
+			Retail
+			</p>
+			<h4 class="service-heading">
+				Inferior product quality, reckless customer support ...
+			</h4>
+			<p class="text-muted">
+				Who to contact ? 
+			</p>
+		</div>
+		<div class="col-md-4">
+			<img src="/images/lap512px.png" height="75" width="75"/><br>
+			<p>
+			<br>
+			Service Providers
+			</p>
+			<h4 class="service-heading">
+				Constant Blackouts, Bandwidth Degrading ...
+			</h4>
+			<p class="text-muted">
+				Who to contact ?
+			</p>
+		</div>
+		<div class="col-md-4">
+			<img src="/images/lock512px.png" height="75" width="75"/><br>
+			<p>
+			<br>
+			Government
+			</p>
+			<h4 class="service-heading">
+				Officials won't listen, Crimes go unnoticed ...
+			</h4>
+			<p class="text-muted">
+				Who to Contact ?
+			</p>
+		</div>
+	</div><br>
+	<center><a href="#section3"><i class="zmdi zmdi-caret-down-circle"></i></a></center>
+</template>
+
+<template name="HomeSection3" id="section3">
+	<section class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContent3}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContent3">
+<h1 id="section3">
+
+<p></p><br>
+<div class="clearfix" ><ul class="about-list">
+<center>
+<small>
+<strong>Your voice matters, and that you have forgotten.</strong><br>Not reporting a crime is a crime itself!
+<hr>
+<p class="text-muted">Help us, Help you !</p>
+</small>
+</center>
+</ul>
+</div>
+<p></p>
+<div class="line">
+
+</div>
+<center>
+&nbsp;&nbsp;&nbsp;<a href="/services" class="btn tf-btn btn-primary btn-sm">
+		Try Us
+	</a>
+</center>
+
+</h1>
+
+</template>
+
+<template name="HomeSection4" id="section4">
+	<section class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContent4}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContent4">
+<h1 id="section4">
+</h1>
+</template>

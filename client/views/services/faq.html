@@ -1,0 +1,52 @@
+<template name="Faq">
+	<div class="page-container container">
+		<div class="row">
+			<div class="col-md-12" id="content">
+				<div class="row" id="title_row">
+					<div class="col-md-12">
+						<h2 id="page_title" align="center">
+							Frequently Asked Questions
+						</h2>
+						<div id="page_menu" class="pull-right">
+						</div>
+					</div>
+				</div>
+				{{> FaqLoremIpsum}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="FaqLoremIpsum">
+	{{#markdown}}<p class="justify">
+	
+	<b>#</b>  Which contacts do i get under Complaints ?
+	<br><b>> </b> If some institute has failed to fix your issue, then you can go to the government agency/ parent agency concerned through 'Complaints' section.<br>
+	<small><b>Note</b>: Prior to contacting the institute concerned, do not contact the authorities listed.</small>
+	
+	<b>#</b>  Which cities are covered by Underpin?
+	<br><b>> </b> We're currently operational only in New Delhi for certain services(Complaints, Write To), and will be covering other cities in near future.
+	
+	<b>#</b> I don't have a gmail account, how do i go about sending emails ?
+	<br><b>> </b> You can get the email of concerned authority from the 'to' value in URL you get after clicking Email.
+	
+	<b>#</b> Why is underpin's email in the bcc field ?
+	<br><b>> </b> We put our email in so we can see things through for your issues. It is upon the user to remove that and contact the authority privately if the user wants to.
+	
+	<b>#</b> I don't see something listed under Complaints category.
+	<br><b>> </b> Drop us an <a href="/suggest">email</a>.
+	
+	<b>#</b> Why do i see so many <b>Submit</b> buttons under categories ?
+	<br><b>> </b> Each button takes you to a different authority depending upon the severity of the issue.
+	
+	<b>#</b> How long before I get response to legal queries ?
+	<br><b>> </b> You will get a response in less than a week's time. Otherwise, please inform us at <b>contact[at]underpin[dot]co[dot]in</b>
+	
+	<b>#</b> Why is everything free ? This looks shady.
+	<br><b>> </b> All our services are free. We do not store any content except legal queries with us.
+	
+	<b>#</b> Can i contribute ?
+	<br><b>> </b> Browse to <a href="/join">Join Us</a> and see how you can help us grow. 
+	</p>{{/markdown}}
+</template>
+
