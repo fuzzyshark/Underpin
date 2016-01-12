@@ -1,4 +1,4 @@
-# Underpin
+# underpin
 
 underpin was built on meteor (http://www.meteor.com) using meteor-kitchen's (http://www.meteorkitchen.com) subpages theme
 
